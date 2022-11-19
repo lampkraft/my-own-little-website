@@ -2,17 +2,20 @@ $titleFontSize: 3rem;
 
 .section {
   min-height: 100vh;
+
+  &:nth-of-type(even) {
+    background-color: black;
+    color: white;
+  }
+}
+
+.container {
   padding: 4rem 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  &:nth-of-type(even) {
-    background-color: black;
-    color: white;
-  }
 }
 
 .title {
@@ -30,6 +33,15 @@ $titleFontSize: 3rem;
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.backdrop {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
