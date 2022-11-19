@@ -11,13 +11,28 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Tiny little website</h1>
+        <section className={styles.section}>
+          <h1 className={styles.title}>Tiny little website</h1>
 
-        <p className={styles.description}>Here is a description.</p>
+          <p className={styles.description}>
+            Hello 👋 and welcome to this <em>tiny little website</em>. Below are
+            some <strong>cool links</strong> that point to more content.
+          </p>
+        </section>
+        <section className={styles.section}></section>
+        <section className={styles.section}>
+          <h2 className={styles.title}>Links</h2>
+
+          <ul>
+            <li>
+              <a>About</a>
+            </li>
+          </ul>
+        </section>
       </main>
 
       <footer className={styles.footer}>
-        <span>Footer</span>
+        <span>by Mattias 🦐</span>
       </footer>
     </div>
   );
