@@ -1,10 +1,12 @@
-$titleFontSize: 3rem;
+$titleFontSize: 4rem;
+$sectionBackgroundColor: #fbfaf5;
+$titleColor: #ff4600;
+$descriptionColor: #f9f8ee;
 
 .section {
   min-height: 100vh;
 
   &:nth-of-type(even) {
-    background-color: black;
     color: white;
   }
 }
@@ -19,6 +21,7 @@ $titleFontSize: 3rem;
 }
 
 .title {
+  color: $titleColor;
   margin: 0;
   line-height: 1.15;
   font-size: $titleFontSize;
@@ -30,9 +33,10 @@ $titleFontSize: 3rem;
 }
 
 .description {
+  color: $descriptionColor;
   margin: 4rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .backdrop {
@@ -51,4 +55,11 @@ $titleFontSize: 3rem;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+}
+
+.splashScreen {
+  position: relative;
+  height: 140px;
+  min-height: 0;
+  z-index: 1;
 }
