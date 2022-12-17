@@ -45,21 +45,25 @@ export default function Home() {
             />
           </div>
         </section>
-        <section
-          className={classNames(
-            styles.sectionSmall,
-            styles.section,
-            styles.sectionFillContent
-          )}
-        >
-          <ul className={styles.cardList}>
-            <li className={styles.card}>Some card content.</li>
-            <li className={styles.card}>Some card content.</li>
-          </ul>
+        <section className={styles.headingWithSection}>
+          <h2 className={styles.subHeading}>Words</h2>
+          <section
+            className={classNames(
+              styles.sectionSmall,
+              styles.section,
+              styles.sectionFillContent
+            )}
+          >
+            <ul className={styles.cardList}>
+              <li className={styles.card}>Some card content.</li>
+              <li className={styles.card}>Some card content.</li>
+            </ul>
+          </section>
         </section>
+
         <section className={styles.section}>
           <div className={styles.container}>
-            <h2 className={styles.title}>Links</h2>
+            <h2 className={styles.subHeading}>Links</h2>
 
             <ul>
               <li>
