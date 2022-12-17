@@ -10,7 +10,7 @@ const titleFont = localFont({
   src: "../fonts/Titania-Regular.ttf",
 });
 
-const bodyFont = Roboto_Mono();
+const bodyFont = Roboto_Mono({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -44,6 +44,18 @@ export default function Home() {
               layout="intrinsic "
             />
           </div>
+        </section>
+        <section
+          className={classNames(
+            styles.sectionSmall,
+            styles.section,
+            styles.sectionFillContent
+          )}
+        >
+          <ul className={styles.cardList}>
+            <li className={styles.card}>Some card content.</li>
+            <li className={styles.card}>Some card content.</li>
+          </ul>
         </section>
         <section className={styles.section}>
           <div className={styles.container}>
