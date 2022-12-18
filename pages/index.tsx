@@ -7,6 +7,8 @@ import { Roboto_Mono } from "@next/font/google";
 import classNames from "classnames";
 import Section from "../components/Section";
 import Heading from "../components/Heading";
+import CardList from "../components/CardList";
+import Card from "../components/Card";
 
 const titleFont = localFont({
   src: "../fonts/Titania-Regular.ttf",
@@ -28,8 +30,9 @@ export default function Home() {
       <main className={styles.main}>
         <Section asSplashScreen>
           <div className={styles.container}>
-            <Heading level="h1">Tiny little website</Heading>
-
+            <Heading level="h1" align="center">
+              Tiny little website
+            </Heading>
             <p className={styles.description}>
               Hello 👋 and welcome to this <em>tiny little website</em>. Below
               are some <strong>cool links</strong> that point to more content.
@@ -47,14 +50,11 @@ export default function Home() {
         </Section>
         <Heading level="h2">Words</Heading>
         <Section small fillContent>
-          <>
-            <ul className={styles.cardList}>
-              <li className={styles.card}>Some card content.</li>
-              <li className={styles.card}>Some card content.</li>
-            </ul>
-          </>
+          <CardList>
+            <Card>Some card content</Card>
+            <Card>Some card content</Card>
+          </CardList>
         </Section>
-
         <Section>
           <div className={styles.container}>
             <Heading level="h2">Links</Heading>

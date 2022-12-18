@@ -3,10 +3,21 @@ import React from "react";
 import styles from "./Heading.module.scss";
 import { HeadingProps } from "./Heading.types";
 
-function Heading({ level = "h1", children }: HeadingProps): JSX.Element {
+function Heading({
+  level = "h1",
+  children,
+  align = "left",
+}: HeadingProps): JSX.Element {
   const element = React.createElement(
     level,
-    { className: classNames(styles.heading, styles[level], {}) },
+    {
+      className: classNames(
+        styles.heading,
+        styles[level],
+        styles[`align-${align}`],
+        {}
+      ),
+    },
     children
   );
 
