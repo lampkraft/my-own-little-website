@@ -1,0 +1,22 @@
+$titleFontSize: 3.5rem;
+$titleColor: #ff4600;
+
+.subHeading {
+  color: $titleColor;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.heading {
+  color: $titleColor;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.h1 {
+  font-size: $titleFontSize;
+}
+
+.h2, .h3, .h4 {
+  font-size: $titleFontSize * 0.5;
+}

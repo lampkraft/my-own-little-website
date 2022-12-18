@@ -1,44 +1,12 @@
-$titleFontSize: 3.5rem;
 $sectionBackgroundColor: #fbfaf5;
-$titleColor: #ff4600;
 $descriptionColor: #FFF;
 $cardBackgroundColor: #FFF;
-
-.section {
-  min-height: 100vh;
-
-  &Small {
-    min-height: 50vh;
-  }
-
-  &FillContent {
-    display: flex;
-  }
-}
-
-.headingWithSection {
-  padding: 1rem 1rem;
-}
 
 .container {
   padding: 1rem 1rem;
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.title {
-  color: $titleColor;
-  margin: 0;
-  line-height: 1.15;
-  font-size: $titleFontSize;
-}
-
-.subHeading {
-  color: $titleColor;
-  margin: 0;
-  line-height: 1.15;
-  font-size: $titleFontSize * 0.5;
 }
 
 .title,
@@ -71,13 +39,6 @@ $cardBackgroundColor: #FFF;
   border-top: 1px solid #0030ff;
   justify-content: center;
   align-items: center;
-}
-
-.splashScreen {
-  position: relative;
-  height: 80px;
-  min-height: 0;
-  z-index: 1;
 }
 
 .cardList {

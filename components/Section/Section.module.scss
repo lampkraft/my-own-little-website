@@ -1,0 +1,22 @@
+.section {
+  min-height: 100vh;
+}
+
+.small {
+  min-height: 50vh;
+}
+
+.fillContent {
+  display: flex;
+}
+
+.headingWithSection {
+  padding: 1rem 1rem;
+}
+
+.splashScreen {
+  position: relative;
+  height: 80px;
+  min-height: 0;
+  z-index: 1;
+}

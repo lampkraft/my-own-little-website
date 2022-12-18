@@ -5,6 +5,8 @@ import backdrop1 from "./backdrop1.png";
 import localFont from "@next/font/local";
 import { Roboto_Mono } from "@next/font/google";
 import classNames from "classnames";
+import Section from "../components/Section";
+import Heading from "../components/Heading";
 
 const titleFont = localFont({
   src: "../fonts/Titania-Regular.ttf",
@@ -24,19 +26,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <section className={classNames(styles.section, styles.splashScreen)}>
+        <Section asSplashScreen>
           <div className={styles.container}>
-            <h1 className={classNames(styles.title, titleFont.className)}>
-              Tiny little website
-            </h1>
+            <Heading level="h1">Tiny little website</Heading>
 
             <p className={styles.description}>
               Hello 👋 and welcome to this <em>tiny little website</em>. Below
               are some <strong>cool links</strong> that point to more content.
             </p>
           </div>
-        </section>
-        <section className={styles.section}>
+        </Section>
+        <Section>
           <div className={styles.backdrop}>
             <Image
               src={backdrop1}
@@ -44,34 +44,27 @@ export default function Home() {
               layout="intrinsic "
             />
           </div>
-        </section>
-        <section className={styles.headingWithSection}>
-          <h2 className={styles.subHeading}>Words</h2>
-          <section
-            className={classNames(
-              styles.sectionSmall,
-              styles.section,
-              styles.sectionFillContent
-            )}
-          >
+        </Section>
+        <Heading level="h2">Words</Heading>
+        <Section small fillContent>
+          <>
             <ul className={styles.cardList}>
               <li className={styles.card}>Some card content.</li>
               <li className={styles.card}>Some card content.</li>
             </ul>
-          </section>
-        </section>
+          </>
+        </Section>
 
-        <section className={styles.section}>
+        <Section>
           <div className={styles.container}>
-            <h2 className={styles.subHeading}>Links</h2>
-
+            <Heading level="h2">Links</Heading>
             <ul>
               <li>
                 <a>About</a>
               </li>
             </ul>
           </div>
-        </section>
+        </Section>
       </main>
 
       <footer className={styles.footer}>
