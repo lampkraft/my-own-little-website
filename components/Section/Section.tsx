@@ -6,14 +6,14 @@ function Section({
   children,
   asSplashScreen,
   fillContent,
-  small,
+  withPadding,
 }: SectionProps): JSX.Element {
   return (
     <section
       className={classNames(styles.section, {
         [styles.splashScreen]: asSplashScreen,
         [styles.fillContent]: fillContent,
-        [styles.small]: small,
+        [styles.withPadding]: withPadding,
       })}
     >
       {children}

@@ -1,6 +1,6 @@
 export type SectionProps = {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
   asSplashScreen?: boolean;
   fillContent?: boolean;
-  small?: boolean;
+  withPadding?: boolean;
 };

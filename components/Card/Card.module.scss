@@ -7,6 +7,11 @@ $cardBackgroundColor: #FFF;
   flex-grow: 1;
   min-width: 100%;
   height: 100%;
+  overflow: hidden;
   padding: 2rem;
   scroll-snap-align: center;
+}
+
+.noPadding {
+  padding: 0;
 }

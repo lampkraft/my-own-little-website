@@ -2,12 +2,9 @@
   min-height: 100vh;
 }
 
-.small {
-  min-height: 50vh;
-}
-
 .fillContent {
   display: flex;
+  flex-direction: column;
 }
 
 .splashScreen {
@@ -15,4 +12,8 @@
   height: 80px;
   min-height: 0;
   z-index: 1;
+}
+
+.withPadding {
+  padding: 1rem;
 }

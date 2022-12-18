@@ -28,16 +28,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Section asSplashScreen>
-          <div className={styles.container}>
-            <Heading level="h1" align="center">
-              Tiny little website
-            </Heading>
-            <p className={styles.description}>
-              Hello 👋 and welcome to this <em>tiny little website</em>. Below
-              are some <strong>cool links</strong> that point to more content.
-            </p>
-          </div>
+        <Section asSplashScreen withPadding>
+          <Heading level="h1" align="center">
+            Tiny little website
+          </Heading>
+          <p className={styles.description}>
+            Hello 👋 and welcome to this <em>tiny little website</em>.
+          </p>
         </Section>
         <Section>
           <div className={styles.backdrop}>
@@ -48,25 +45,29 @@ export default function Home() {
             />
           </div>
         </Section>
-        <Heading level="h2">Words</Heading>
-        <Section small fillContent>
-          <CardList>
-            <Card>Some card content</Card>
-            <Card>Some card content</Card>
-          </CardList>
-        </Section>
-        <Section>
-          <div className={styles.container}>
-            <Heading level="h2">Links</Heading>
-            <ul>
-              <li>
-                <a>About</a>
-              </li>
-            </ul>
+        <Section withPadding fillContent>
+          <Heading level="h2">Pix</Heading>
+          <div className={styles.cardListWrapper}>
+            <CardList>
+              <Card noPadding>
+                <div className={styles.pixContent}></div>
+              </Card>
+              <Card noPadding>
+                <div className={styles.pixContent}></div>
+              </Card>
+            </CardList>
           </div>
         </Section>
+        <section className={styles.cardListSection}>
+          <Heading level="h2">Words</Heading>
+          <div className={styles.cardListWrapper}>
+            <CardList>
+              <Card>Some card content</Card>
+              <Card>Some card content</Card>
+            </CardList>
+          </div>
+        </section>
       </main>
-
       <footer className={styles.footer}>
         <span>by Mattias 🦐</span>
       </footer>
